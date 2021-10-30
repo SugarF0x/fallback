@@ -1,6 +1,6 @@
 {
   "name": "fallback",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "cross-env TAILWIND_MODE=watch nuxt dev",
