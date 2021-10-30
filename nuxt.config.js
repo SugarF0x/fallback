@@ -1,3 +1,5 @@
+import locales from './locales'
+
 export default {
   target: 'static',
   head: {
@@ -13,11 +15,31 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: ['~/assets/css/tailwind.css'],
+  css: [
+    '~/assets/css/tailwind.css',
+    '~/assets/css/global.css',
+    '~/assets/css/fonts.css'
+  ],
   plugins: [],
   components: true,
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/composition-api/module'],
-  modules: [],
+  modules: ['nuxt-i18n'],
+  i18n: {
+    vueI18nLoader: true,
+    locales: ['en', 'ru'],
+    defaultLocale: 'ru',
+    strategy: 'no_prefix',
+    vueI18n: {
+      fallbackLocale: 'ru',
+      silentFallbackWarn: true,
+      messages: locales
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+    }
+  },
   build: {
     postcss: {
       plugins: {

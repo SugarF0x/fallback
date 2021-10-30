@@ -25,6 +25,8 @@
     },
     "types": [
       "@nuxt/types",
+      "@nuxtjs/i18n",
+      "vue-i18n",
       "@types/node"
     ]
   },
