@@ -25,12 +25,18 @@ export default {
   modules: ['nuxt-i18n'],
   i18n: {
     vueI18nLoader: true,
-    locales: ['ru', 'en'],
-    defaultLocale: 'en',
+    locales: ['en', 'ru'],
+    defaultLocale: 'ru',
+    strategy: 'no_prefix',
     vueI18n: {
-      fallbackLocale: 'en',
+      fallbackLocale: 'ru',
       silentFallbackWarn: true,
       messages: locales
+    },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
     }
   },
   build: {
