@@ -7,7 +7,12 @@ const contact = 'antuzov'
 export default defineComponent({
   setup() {
     const i18n = useLocale()
-    useMeta({ title: `${i18n.t('error').toString()} 500` })
+    useMeta({
+      title: `${i18n.t('error').toString()} 500`,
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/500.png' }
+      ]
+    })
 
     return {
       contact
