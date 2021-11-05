@@ -1,4 +1,13 @@
-# 0.1.0 (2021-10-30)
+## [0.1.1](https://github.com/SugarF0x/fallback/compare/v0.1.0...v0.1.1) (2021-11-05)
+
+
+### Bug Fixes
+
+* **assets:** set custom icon for 500 fallback page ([7befc5f](https://github.com/SugarF0x/fallback/commit/7befc5f39a6f5ec7f4b8f1535aa597c5060b2c64))
+
+
+
+# [0.1.0](https://github.com/SugarF0x/fallback/compare/34e1517761b386466d99c9dc7b0231f6a9cb011a...v0.1.0) (2021-10-30)
 
 
 ### Features
