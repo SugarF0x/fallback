@@ -38,7 +38,7 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .wrapper {
-  background-image: linear-gradient(black, rgba(0,0,0,.25)), url("/images/server-room.jpg");
+  background-image: linear-gradient(black, rgba(0,0,0,.25)), url("/images/server_room.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -47,7 +47,7 @@ export default defineComponent({
   color: white;
 
   @screen md {
-    background-image: linear-gradient(transparent, black), url("/images/server-room.jpg")
+    background-image: linear-gradient(transparent, black), url("/images/server_room.jpg")
   }
 
   a {
@@ -57,7 +57,7 @@ export default defineComponent({
 }
 
 .image {
-  background-image: url("/images/winry.png");
+  background-image: url("/images/winry_working.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
